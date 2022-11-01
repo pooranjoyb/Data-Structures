@@ -20,14 +20,14 @@ void insert_mid()
     }
     else
     {
-        int i = 0, pos, value;
-        printf("Enter data to insert at the end : ");
+        int i = 1, pos, value;
+        printf("Enter data to insert : ");
         scanf("%d", &value);
         printf("Enter the position to insert : ");
         scanf("%d", &pos);
         struct node *temp = head;
         new->data = value;
-        while (i == pos)
+        while (i != pos)
         {
             i++;
             temp = temp->link;
