@@ -2,3 +2,4 @@
 
 *.exe
 /linked-list/*.exe
+/.vscode
