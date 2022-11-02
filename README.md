@@ -1,3 +1,5 @@
 # Data-Structures
 
-This repo contains basic DSA codes done in BTech 3rd SEM 
+This repository contains basic Data Stucture Codes 
+
+### Feel free to contribute :)
