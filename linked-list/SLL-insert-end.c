@@ -1,23 +1,27 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-struct node{
+struct node
+{
     int data;
     struct node *link;
 };
 
 struct node *head = NULL;
 
-void insert_end(){
+void insert_end()
+{
     int value;
     struct node *new;
+    new->data = value;
     new = malloc(sizeof(struct node));
     if (head == NULL)
     {
         head = new;
-        printf("LL is empty");
+        new->link = NULL;
     }
-    else{
+    else
+    {
         printf("Enter data to insert at the end : ");
         scanf("%d", &value);
 
@@ -33,21 +37,23 @@ void insert_end(){
     }
 }
 
-void display(){
+void display()
+{
     if (head == NULL)
     {
         printf("LL is empty");
     }
-    else{
+    else
+    {
         struct node *temp;
         temp = head;
-        while(temp != NULL){
+        while (temp != NULL)
+        {
             printf("%d\t", temp->data);
             temp = temp->link;
         }
     }
 }
-
 
 int main(void)
 {
@@ -56,22 +62,22 @@ int main(void)
     temp = malloc(sizeof(struct node));
     temp1 = malloc(sizeof(struct node));
 
-    //first node with its link
+    // first node with its link
     head->data = 10;
     head->link = temp;
 
-    //second node with its link
+    // second node with its link
     temp->data = 20;
     temp->link = temp1;
 
-    //third node with its link
+    // third node with its link
     temp1->data = 30;
     temp1->link = NULL;
 
-    //inserting at end
+    // inserting at end
     insert_end();
 
-    //displaying the LL
+    // displaying the LL
     display();
     return 0;
 }
