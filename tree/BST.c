@@ -11,7 +11,7 @@ void inorder(struct node *root)
 {
 
     if (root == NULL)
-        return ;
+        return;
     inorder(root->left);
     printf("%d\t", root->data);
     inorder(root->right);
@@ -19,7 +19,7 @@ void inorder(struct node *root)
 void postorder(struct node *root)
 {
     if (root == NULL)
-        return ;
+        return;
     postorder(root->left);
     postorder(root->right);
     printf("%d\t", root->data);
@@ -27,7 +27,7 @@ void postorder(struct node *root)
 void preorder(struct node *root)
 {
     if (root == NULL)
-        return ;
+        return;
     printf("%d\t", root->data);
     preorder(root->left);
     preorder(root->right);
@@ -61,4 +61,5 @@ int main()
     postorder(root);
     printf("Preorder");
     preorder(root);
+    insert(root, 11);
 }
