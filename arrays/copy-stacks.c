@@ -1,3 +1,5 @@
+//copying even elements of stack in another stack
+
 #include <stdio.h>
 int size = 5;
 int  stack[5];
