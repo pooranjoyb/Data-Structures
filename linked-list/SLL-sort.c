@@ -77,11 +77,14 @@ void display()
 
 int main()
 {
-    addNode(12);
+    addNode(-2);
+    addNode(5);
+    addNode(-9);
+    addNode(-6);
+    addNode(-3);
+    addNode(-1);
     addNode(1);
-    addNode(43);
-    addNode(21);
-    addNode(39);
+    addNode(6);
     printf("Original list: \n");
     display();
     sortList();
